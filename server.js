@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 dotenv.config()
 const ShortUrl = require('./models/shortUrl')
 
-mongoose.connect('mongodb://localhost:27017/UrlShortners')
+mongoose.connect(process.env.DB)
 
 const app = express()
 
